@@ -99,3 +99,24 @@ $green:$green;
 
     
 }
+.small-card{
+    height: 194px;
+    width: 153px;
+    border-radius: 3px;
+    background: #F2FCE4;
+    // FFF3FF
+    // F2FCE4
+    // FEEFEA
+    // FFFCEB
+    // FEEFEA
+    p{
+        color: gray;
+    }
+
+}
+.medium-card{
+    height: 302px;
+    width: 228px;
+    border: 1px solid #e6a793;
+
+}

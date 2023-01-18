@@ -5,3 +5,55 @@
     <img src="../../../assets/hero-bg.jpg" right="500px" alt=""> -->
 
 </div>
+<div>
+    <div class="p-5">
+        <div class="d-flex justify-content-between">
+            
+            <h3>Explore Categories</h3>
+            <span>
+
+                <a href="" class="ms-2 text-decoration-none text-black">All</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Vegetables</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Fruits</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Coffe & teas</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Meat</a>
+            </span>
+        </div>
+        <div class="d-flex justify-content-evenly">
+            <div class="small-card p-3" *ngFor="let type of ['peach','vegetable','strawberry','apple','orange','potato','carrot']">
+                <img src="../../../assets/{{type}}.png" alt="">
+                <h6 class="p-2">{{type | titlecase}}</h6>
+                <p class="gray-gradient p-2"> 210 items </p>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="p-5">
+        <div class="d-flex justify-content-between ">
+            
+            <h3>Featured Products</h3>
+            <span>
+
+                <a href="" class="ms-2 text-decoration-none text-black">All</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Vegetables</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Fruits</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Coffe & teas</a>
+                <a href="" class="ms-2 text-decoration-none text-black">Meat</a>
+            </span>
+        </div>
+        <div class="d-flex justify-content-evenly">
+            <div class="medium-card p-3" *ngFor="let type of ['peach','vegetable','strawberry','apple','orange']">
+                <img src="../../../assets/{{type}}.png" alt="">
+                <span>vegetable</span>
+                <h6 class="p-2">{{type | titlecase}} 500g</h6>
+                <p class="gray-gradient p-2"> 210 items </p>
+                <p>By Mrfood</p>
+                <p class="d-flex justify-content-between"><span><span>$2</span><span>$3.99</span></span><button><i width="5px" class="fa-solid fa-cart-shopping"></i> Add</button> </p>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

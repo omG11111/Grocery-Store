@@ -6,7 +6,7 @@
 
 </div>
 <div>
-    <div class="p-5">
+    <div class="p-5 section-1">
         <div class="d-flex justify-content-between">
             
             <h3>Explore Categories</h3>
@@ -29,8 +29,8 @@
             </div>
         </div>
     </div>
-    <div class="p-5">
-        <div class="d-flex justify-content-between ">
+    <div class="p-5 section-2" >
+        <div class="d-flex justify-content-between">
             
             <h3>Featured Products</h3>
             <span>
@@ -56,4 +56,79 @@
             </div>
         </div>
     </div>
+    <div class="p-5 section-3 d-flex justify-content-evenly" >
+        <div class="offer-1 d-flex flex-column justify-content-evenly">
+            <button class="btn-1">Free delivery</button>
+            <h4>Free delivery over $50</h4>
+            <p>Shop $50 product and get free delivery anywhere.</p>
+            <button class="btn-2">
+                Shop Now →
+            </button>
+        </div>
+        <div class="offer-2 d-flex flex-column justify-content-evenly ">
+            <button class="btn-1">60% off</button>
+            <h4>Organic Food</h4>
+            <p>Save up to 60% off on your first order.</p>
+            <button class="btn-2">Order Now →</button>
+        </div>
+    </div>
+    <div class="p-5 section-4">
+        <div class="d-flex  justify-content-between part-1">
+            <div class="d-flex">
+                <h3 class="m-0">Daily Best Sells</h3>
+                <span>
+    
+                    <a href="" class="ms-2 text-decoration-none text-black">Featured</a>
+                    <a href="" class="ms-2 text-decoration-none text-black">Popular</a>
+                    <a href="" class="ms-2 text-decoration-none text-black">New</a>
+                    
+                </span>
+                <button >Expire in: 10:56:21</button>
+
+            </div>
+            <span >
+                <button>←</button>
+                <button>→</button>
+            </span>
+        </div>
+        <div class="d-flex justify-content-evenly">
+            <div class="medium-card-2 p-3 " *ngFor="let type of ['Coffe','Coffe','Coffe','Coffe']">
+                <img src="../../../assets/{{type}}.png" alt="">
+                <p class="gray-gradient ">Coffe & teas</p>
+                <h6 class=" m-0">{{type | titlecase}}</h6>
+                <p class="gray-gradient "> By MrFood</p>
+                <div >
+                    <span>$20 <span>$25</span></span>
+                    <div class="w-100 d-flex"></div>
+                    <span>Sold:7/20</span>
+                </div>
+                <div class="mt-auto">
+
+                    <button class="w-100 add-cart">
+                        <span><i class="fas fa-cart-shopping"></i>
+                        Add to cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="medium-card-2 p-3">
+                <!-- <img src="../../../assets/{{type}}.png" alt=""> -->
+                <p class="gray-gradient p-2">Coffe & teas</p>
+                <!-- <h6 class="p-2">{{type | titlecase}}</h6> -->
+                <p class="gray-gradient p-2"> By MrFood</p>
+                <div>
+                    <span>$20 <span>$25</span></span>
+                    <div class="w-100"></div>
+                    <span>Sold:7/20</span>
+                </div>
+                <div class="">
+
+                    <button class="w-100 add-cart">
+                        <span><i class="fas fa-cart-shopping"></i>
+                            Add to cart</span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
 </div>

@@ -1,4 +1,7 @@
-$green:$green;
+$green:#198754;
+$green-2:#237d64;
+$green:$green-2;
+$darkgray:#253d4e;
 .green-clr{
     color:$green;
 }
@@ -125,14 +128,46 @@ $green:$green;
     }       
 }
 .footer-1{
-    height: 270px;
+    height: 300px;
     border: 1px solid $green;
     margin: 0px;
-
-    ul{
+    padding: 40px;
+    ul.first-footer-col{
+        list-style: none;
+        color: $green;
+        font-weight: 600;
+        
         li{
+            font-weight: normal;
+            margin-bottom: 8px;
+            // color: #253d4e;
+            color: inherit;
+            span:last-child{
+                font-size: small;
+                color: #33434e;
+                font-weight: normal;
 
-            margin-top: 8px;
+            }
+        }
+
+    }
+    .last-footer-ui{
+    margin-right: 100px;
+    }
+
+    
+    ul:not(.first-footer-col){
+    
+        li{
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #253d4e;
+            span{
+                font-size: 14px;
+                color: #33434e;
+                font-weight: normal;
+
+            }
         }
        
         
@@ -242,4 +277,89 @@ $green:$green;
         color: $green; 
     }
 
+}
+.section-5{
+    ul::-webkit-scrollbar{
+        display: none;
+    }
+    
+    ul{
+        
+        .big-card-head{
+            hr{
+                height: 4px; 
+                background: $green;
+                border: none;
+                opacity:0.8;
+                border-radius: 2px;
+                margin: 8px 0px;
+                
+            }
+        }
+        
+        padding: 0px;
+        list-style: none;
+        width: 207px;
+        height: 335px;
+        overflow-y: scroll;
+        // scrollbar-width: 0px;
+       
+        // scroll-behavior: ;
+        // border: 1px solid black;
+        li{
+            display: flex;
+            justify-content: start;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                span{
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                }
+
+            }
+
+        }
+    }
+}
+.section-6{
+    padding: 20px 0px;
+    .sec-6{
+        margin: 0px 20px;
+
+
+
+    }
+    .card{
+        width:  330px;
+        padding: 20px 25px;
+        // margin: 0px;
+        
+
+        font-size: small;
+        display: flex;
+        flex-direction: row;
+        // height: 150px;
+        align-items: center;
+        h5{
+            color: #198754;
+            margin: 0px;
+        }
+        p{
+            color: #253d4e;
+            margin: 0px;
+        }
+        img{
+            margin-right:8px ;
+            
+        }
+    }
+}
+hr{
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }

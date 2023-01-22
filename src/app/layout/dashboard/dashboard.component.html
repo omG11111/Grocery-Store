@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="p-5 section-2" >
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between head">
             
             <h3>Featured Products</h3>
             <span>
@@ -44,12 +44,14 @@
         </div>
         <div class="d-flex justify-content-evenly">
             <div class="medium-card p-3" *ngFor="let type of ['peach','vegetable','strawberry','apple','orange']">
-                <img src="../../../assets/{{type}}.png" alt="">
-                <span>vegetable</span>
-                <h6 class="p-2">{{type | titlecase}} 500g</h6>
-                <p class="gray-gradient p-2"> 210 items </p>
+                <div class="text-center">
+                    <img src="../../../assets/{{type}}.png" alt="">
+                </div>
+                <div class="m-0 gray-gradient">vegetable</div>
+                <h6 class=" m-0">{{type | titlecase}} 500g</h6>
+                <p class="gray-gradient  "> 210 items </p>
                 <p>By Mrfood</p>
-                <p class="d-flex justify-content-between"><span><span>$2</span><span>$3.99</span></span><button><i width="5px" class="fa-solid fa-cart-shopping"></i> Add</button> </p>
+                <p class="d-flex justify-content-between"><span><span>$2</span><span>$3.99</span></span><button class="light-green-btn"><i width="5px" class="fa-solid fa-cart-shopping"></i> Add</button> </p>
 
 
 
@@ -93,6 +95,7 @@
         </div>
         <div class="d-flex justify-content-evenly">
             <div class="medium-card-2 p-3 " *ngFor="let type of ['Coffe','Coffe','Coffe','Coffe']">
+                <span class="tag">Save 8%</span>
                 <img src="../../../assets/{{type}}.png" alt="">
                 <p class="gray-gradient ">Coffe & teas</p>
                 <h6 class=" m-0">{{type | titlecase}}</h6>
@@ -102,115 +105,180 @@
                     <div class="w-100 d-flex"></div>
                     <span>Sold:7/20</span>
                 </div>
-                <div class="mt-auto">
+                <div class="mt-5">
 
-                    <button class="w-100 add-cart">
+                    <button class="w-100 add-cart  green-button">
                         <span><i class="fas fa-cart-shopping"></i>
                         Add to cart</span>
                     </button>
                 </div>
             </div>
-            <div class="medium-card-2 p-3">
-                <!-- <img src="../../../assets/{{type}}.png" alt=""> -->
-                <p class="gray-gradient p-2">Coffe & teas</p>
-                <!-- <h6 class="p-2">{{type | titlecase}}</h6> -->
-                <p class="gray-gradient p-2"> By MrFood</p>
-                <div>
-                    <span>$20 <span>$25</span></span>
-                    <div class="w-100"></div>
-                    <span>Sold:7/20</span>
-                </div>
-                <div class="">
+            <div class=" p-3 promo ">
+                <div class="text-center">
+                    <h1>10% OFF</h1>
+                    <p>For new member sign up at 
+                        the first time</p>
 
-                    <button class="w-100 add-cart">
-                        <span><i class="fas fa-cart-shopping"></i>
-                            Add to cart</span>
-                        </button>
                 </div>
+                    <label for="" >Email address<sup class="bs-danger">*</sup></label>
+                    <span>
+                        <i class="fas fa-envelope "></i>
+                        <input type="text" class="form-control" placeholder="johndoreee@gmail.com">
+
+                    </span>
+                    <label for="" >Password <sup class="bs-danger">*</sup></label>
+                    <span>
+                        <i class="fa-solid fa-flip-both fa-key"></i>
+                        <input type="text" class="form-control"  placeholder="Maximum 8 Cartactors">
+                    </span>
+                    <button  class="green-button mt-5">Sign Up NOW</button>
+              
+        
             </div>
         </div>
     </div>
     <div class="section-5 d-flex justify-content-evenly">
-        
-        <ul>
+        <div class="outer-div">
             <div class="d-flex flex-column align-items-start big-card-head">
                 <h5 class="m-0">Top Sells</h5>
                 <hr class="green-clr" />
             </div>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-        </ul>
-        <ul>
-            <div class="d-flex flex-column align-items-start big-card-head">
-                <h5 class="m-0">Top Sells</h5>
-                <hr class="green-clr" />
-            </div>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-        </ul>
-        <ul>
-            <div class="d-flex flex-column align-items-start big-card-head">
-                <h5 class="m-0">Top Sells</h5>
-                <hr class="green-clr" />
-            </div>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-        </ul>
-        <ul>
-            <div class="d-flex flex-column align-items-start big-card-head">
-                <h5 class="m-0">Top Sells</h5>
-                <hr class="green-clr" />
-            </div>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-            <li>
-                <img width="90px" src="../../../assets/orange.png" alt="">
-                <div><b>name</b><span>$34<span>$23</span></span></div>
-            </li>
-        </ul>        
+            <ul>
+                <li>
+                    <span class="tile-image">
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
 
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
 
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
 
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="outer-div">
+            <div class="d-flex flex-column align-items-start big-card-head">
+                <h5 class="m-0">Top Rated</h5>
+                <hr class="green-clr" />
+            </div>
+            <ul>
+                <li>
+                    <span class="tile-image">
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="outer-div">
+            <div class="d-flex flex-column align-items-start big-card-head">
+                <h5 class="m-0">Treanding Items</h5>
+                <hr class="green-clr" />
+            </div>
+            <ul>
+                <li>
+                    <span class="tile-image">
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="outer-div">
+            <div class="d-flex flex-column align-items-start big-card-head">
+                <h5 class="m-0">Recently Added</h5>
+                <hr class="green-clr" />
+            </div>
+            <ul>
+                <li>
+                    <span class="tile-image">
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+                <li>
+                    <span class="tile-image">
+
+                        <img src="../../../assets/orange.png" alt="">
+                    </span>
+                    <div><b>name</b><span>$34<span>$23</span></span></div>
+                </li>
+            </ul>
+        </div>
+      
     </div>
     <hr />
     <div class="section-6">
@@ -218,7 +286,7 @@
             <div class="card">
                 <span>
 
-                    <img width="40px" src="../../../assets/Filled_outline.png" alt="">
+                    <img width="40px" src="../../../assets/best-price.png" alt="">
                 </span>
                 <span>
                     <h5>Best Prices & Deals</h5>
@@ -230,22 +298,24 @@
             <div class="card">
                 <span>
 
-                    <img width="40px" src="../../../assets/Filled_outline.png" alt="">
+                    <img width="40px" src="../../../assets/refundable.png" alt="">
                 </span>
                 <div>
-                    <h5>Best Prices & Deals</h5>
-                    <p>Don't miss our daily amazing deals and prices</p>
+                    <h5>Refundable</h5>
+                    <p>If your items have damage we agree to  
+                        refund it
+                    </p>
     
     
                 </div>
             </div>
             <div class="card">
                 <span>
-                <img width="40px" src="../../../assets/Filled_outline.png" alt="">
+                <img width="40px" src="../../../assets/free-delivery.png" alt="">
                 </span>
                 <div>
-                    <h5>Best Prices & Deals</h5>
-                    <p>Don't miss our daily amazing deals and prices</p>
+                    <h5>Free Delivery</h5>
+                    <p>Do purchase over 50$ and get free delivery anywhere</p>
     
     
                 </div>

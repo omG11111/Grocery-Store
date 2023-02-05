@@ -1,0 +1,24 @@
+// $height:230px;
+button{
+    background: none;
+    border-radius: 50%;
+    font-size: 36px;
+    color: rgb(171, 180, 180);
+    border: none;
+    .next{
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        
+    }
+    .prev{
+        position: absolute;
+        top: height/2  - 18px;
+
+    }
+}
+.slider-body{
+    // height: $height;
+    position: relative;
+
+}

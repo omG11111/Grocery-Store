@@ -9,6 +9,7 @@ import { FooterComponent } from './views/footer/footer.component';
 import { LayoutComponent } from './views/layout/layout.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { CustomSliderComponent } from './common/custom-slider/custom-slider.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
-    DashboardComponent
+
+  
+    // DashboardComponent
   ],
   imports: [
     BrowserModule,
